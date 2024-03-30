@@ -1,0 +1,30 @@
+Install Apache and PHP on Ubuntu 20.04
+1. Create Ubuntu 20.04 instance using 7 steps workflow. Open ports 80 and 22 using
+security group
+2. ssh to created instance
+3. Install apache web server using following commands
+1. sudo apt-get update
+2. sudo apt-get install apache2
+4. Validate installation by accessing public ip of EC2 instance in browser
+5. Use the following commands to install php - sudo apt install php
+libapache2-mod-php php-mysql
+6. Make index.php as the default first load page
+
+1. Edit /etc/apache2/mods-enabled/dir.conf file and make index.php as first
+access page
+DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+2. Restart the web server - sudo systemctl restart apache2
+
+Install OwnCloud on Ubuntu 20.04
+1. Run following commands
+1. curl
+https://attic.owncloud.org/download/repositories/10.5/Ubuntu_20.04/Release.key | sudo apt-key add -
+2. echo 'deb http://attic.owncloud.org/download/repositories/10.5/Ubuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/owncloud.list
+3. sudo apt update
+4. sudo apt install php-bz2 php-curl php-gd php-imagick php-intl php-mbstring
+php-xml php-zip owncloud-files
+2. Change default site directory to owncloud files directory using sudo user
+1. edit /etc/apache2/sites-enabled/000-default.conf
+2. update directory root path to /var/www/owncloud
+3. restart the server - sudo systemctl reload apache2
+3. Access the owncloud application using public ip of EC2 instance in browser
