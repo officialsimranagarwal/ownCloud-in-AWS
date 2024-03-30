@@ -1,0 +1,11 @@
+What are you expected to do?
+
+A. Implement 2 different subnets (one public and the other private) in a custom VPC
+called owncloud-vpc.
+B. Install and configure MySQL database to run on the private subnet. This subnet
+should be associated with a security group that allows traffic to private subnet only
+from the public subnet.
+C. The ownCloud app should be installed in public subnet and MUST be configured to
+access a new database called owncloud-db (created by you) in the private subnet.
+Apache HTTP server should host ownCloud application in this subnet and must be
+configured with required PHP modules for ownCloud. 
