@@ -1,31 +1,36 @@
-# deploy ownCloud on AWS ☁️
+# Deploying ownCloud on AWS ☁️
 
-A guide to deploying **ownCloud**, a leading open-source content collaboration software, on **Amazon Web Services (AWS)**. Create your own secure file storage and sharing solution in the cloud.
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![ownCloud](https://img.shields.io/badge/ownCloud-1D2D44?style=for-the-badge&logo=owncloud&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
-## 📄 Contents
+## 📖 Overview
 
-- **ownCloud Aws_compressed.pdf**: Detailed documentation and visual guide.
-- **Installation Scripts**: Command reference for setting up required dependencies.
-- **Configuration Guide**: Steps to configure the environment.
+A complete guide to hosting **ownCloud**, an open-source file hosting service, on an **AWS EC2** instance running Ubuntu. It covers setting up the LAMP stack and configuring trusted domains.
 
-## ✨ Features
+## 📂 Contents
 
-- **Secure Storage**: Control your data on your own AWS infrastructure.
-- **Scalability**: Leverage AWS services like EC2 and S3 for growth.
-- **Collaboration**: File sharing and synchronization across devices.
+-   **`ownCloud Aws_compressed.pdf`**: The primary deployment guide.
+-   **`installation of different files.`**: Command reference for installing Apache, MySQL, PHP, and ownCloud.
+-   **`what we are expected to do.`**: Step-by-step implementation milestones.
 
-## 🚀 Getting Started
+## 🚀 Deployment Steps (Summary)
 
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/officialsimranagarwal/ownCloud-in-AWS.git
-    ```
-2.  **Review the Guide**: Open `ownCloud Aws_compressed.pdf` for a walkthrough.
-3.  **Deploy**: specific commands can be found in the text files.
+1.  **Infrastructure**: Launch an Ubuntu EC2 instance on AWS.
+2.  **LAMP Stack**: Install Apache2, MariaDB, and PHP 7.2.
+3.  **Database**: Configured a secure MySQL database for ownCloud.
+4.  **Application**: Download and extract ownCloud source code.
+5.  **Configuration**: Set up `trusted_domains` in `config.php` to allow access via public IP.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please check the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## 👤 Author
+
+**Simran Agarwal**
+-   [Profile](https://github.com/officialsimranagarwal)
+-   [LinkedIn](https://linkedin.com/in/simran-agarwal-54751b191)
+
+---
+*Generated with ❤️ by Simran Agarwal*
